@@ -16,18 +16,18 @@ aPackageInfo = [
 	:libs = 	[
 		[
 			:name = "jsonlib",
-			:version = "",
+			:version = "1.0.11",
 			:providerusername = "ringpackages"
 		],
 		[
 			:name = "internetlib",
 			:version = "1.0.5",
-			:providerusername = ""
+			:providerusername = "ringpackages"
 		],
 		[
 			:name = "internetlib",
 			:version = "1.0.21",
-			:providerusername = ""
+			:providerusername = "ringpackages"
 		]
 	],
 	:files = 	[

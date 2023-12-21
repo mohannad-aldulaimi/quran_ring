@@ -12,6 +12,9 @@ import System.GUI
 
 cStyleSheet_combos = 'text-align:center;'
 
+cComboBoxStyle = "QComboBox QAbstractItemView ,QComboBox{ t1ext-align: right; }"  
+
+cComboBoxStyle =''
 if IsMainSourceFile() {
 	new App {
 		StyleFusionBlack()
@@ -29,10 +32,17 @@ class Quran_ringController from windowsControllerParent
 	cSoura_url = ''
 	cReciter_name=''
 	aAvi_sowers = []
+
+	oView.win.setminimumwidth(600)
+	oView.reciters_Widget.setminimumwidth(250)
+	oView.moshaf_Widget4.setminimumwidth(250)
+	oView.sura_Widget.setminimumwidth(250)
+	
+
 	oView.sura_Widget.hide()
 	oView.sura_Widget.setstylesheet(cStyleSheet_combos)
-	oView.reciters_Widget.setstylesheet(cStyleSheet_combos)
 
+	
 	oView.Label3.hide()
 	oView.Label5.hide()
 	oView.moshaf_Widget4.hide()
@@ -76,9 +86,6 @@ class Quran_ringController from windowsControllerParent
 
 		this.nReciterNumber = nCurrent_index
 		//Removeing All Moshafs
-			//for x=1 to oView.moshaf_Widget4.count()
-				//oView.moshaf_Widget4.RemoveItem(x)
-			//next
 			oView.moshaf_Widget4.clear()
 		// Filling data
 			aMoshfs = aResiters[nCurrent_index]['moshaf']
@@ -109,9 +116,6 @@ class Quran_ringController from windowsControllerParent
 		ok
 		if len(aAllSuras) < 1 return ok
 		//Removeing All Suras
-			//for x=1 to (len(this.aAvi_sowers )-1)//oView.Sura_Widget.count()
-				//oView.Sura_Widget.RemoveItem(x)
-			//next
 			oView.Sura_Widget.clear()
 		// Filling data
 		oView.Sura_Widget.addItem('اختر سورة',0)
@@ -135,7 +139,7 @@ class Quran_ringController from windowsControllerParent
 		oView {
 			if len(this.aAvi_sowers) > 0
 				this.cSoura_url = this.cMoshaf_SERVER+this.Add_Degit(this.aAvi_sowers[(self.Sura_Widget.currentindex()-1)][1])+'.mp3'
-				lbl_sura_name.setText(this.aAvi_sowers[(self.Sura_Widget.currentindex()-1)][2])
+				lbl_sura_name.setText('سورة '+this.aAvi_sowers[(self.Sura_Widget.currentindex()-1)][2])
 				media_url = this.cSoura_url 
 				media_name = 'سورة '
 				media_name += this.aAvi_sowers[(self.Sura_Widget.currentindex()-1)][2]

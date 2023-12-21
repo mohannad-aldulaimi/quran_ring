@@ -5,7 +5,7 @@ load 'jsonlib.ring'
 load 'internetlib.ring'
 
 load 'player/playerController.ring'
-media_url = ""//"https://server10.mp3quran.net/minsh/Almusshaf-Al-Mojawwad/001.mp3"
+media_url = ""//"https://server10.mp3quran.net/minsh/Almusshaf-Al-Mojawwad/020.mp3"
 media_name ='' //'سورة طه - محمد صديق المنشاوي'
 
 import System.GUI

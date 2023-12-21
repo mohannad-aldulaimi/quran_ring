@@ -1,0 +1,152 @@
+# Start Form Designer File
+aObjectsList = [
+	[ :name = "Window" , :id = 1 , :classname = "formdesigner_qwidget" , :data = [
+		 :x = 20 , : y = 20  , 
+		 :width =  560 , :height = 400 , 
+		 :title =  "القرآن" , 
+		 :backcolor =  "" , 
+		 :windowflags =  "" , 
+		 :mainlayout =  "" ,
+		 :WindowIcon =  "" , 
+		 :Menubar =  ""  ,
+		 :IndexType =  0  ,
+		 :GUILibrary =  0  
+
+		]
+	],
+	[ :name = "lbl_Suras_COunt9" , :id = 5 , :classname = "formdesigner_qlabel" , :data = [
+		 :x = -107 , : y = 126  , 
+		 :width =  283 , :height = 56 , 
+		 :textcolor =  "" , 
+		 :backcolor =  "" , 
+		 :font =  "Times New Roman,10,-1,5,50,0,0,0,0,0,Regular" , 
+		 :parent =  "win"  ,
+		 :text =  "",
+		 :textalign =  0
+		]
+	],
+	[ :name = "moshaf_Widget4" , :id = 10 , :classname = "formdesigner_qcombobox" , :data = [
+		 :x = 182 , : y = 96  , 
+		 :width =  208 , :height = 34 , 
+		 :textcolor =  "" , 
+		 :backcolor =  "" , 
+		 :font =  "Times New Roman,11,-1,5,50,0,0,0,0,0,Regular" , 
+		 :parent =  "win"  ,
+		 :cItems =  "",
+		 :cCurrentIndex =  "",
+		 :setactivatedEvent =  "",
+		 :setcurrentIndexChangedEvent =  "GetSura",
+		 :seteditTextChangedEvent =  "",
+		 :sethighlightedEvent =  ""
+		]
+	],
+	[ :name = "Label5" , :id = 11 , :classname = "formdesigner_qlabel" , :data = [
+		 :x = 399 , : y = 138  , 
+		 :width =  133 , :height = 56 , 
+		 :textcolor =  "" , 
+		 :backcolor =  "" , 
+		 :font =  "Times New Roman,20,-1,5,50,0,0,0,0,0,Regular" , 
+		 :parent =  "win"  ,
+		 :text =  "اختر سورة:",
+		 :textalign =  0
+		]
+	],
+	[ :name = "Sura_Widget" , :id = 12 , :classname = "formdesigner_qcombobox" , :data = [
+		 :x = 182 , : y = 148  , 
+		 :width =  208 , :height = 31 , 
+		 :textcolor =  "" , 
+		 :backcolor =  "" , 
+		 :font =  "Times New Roman,11,-1,5,50,0,0,0,0,0,Regular" , 
+		 :parent =  "win"  ,
+		 :cItems =  "",
+		 :cCurrentIndex =  "",
+		 :setactivatedEvent =  "",
+		 :setcurrentIndexChangedEvent =  "prepare_Sura",
+		 :seteditTextChangedEvent =  "",
+		 :sethighlightedEvent =  ""
+		]
+	],
+	[ :name = "lbl_sura_name" , :id = 7 , :classname = "formdesigner_qlabel" , :data = [
+		 :x = 162 , : y = 195  , 
+		 :width =  230 , :height = 47 , 
+		 :textcolor =  "" , 
+		 :backcolor =  "" , 
+		 :font =  "Times New Roman,20,-1,5,50,0,0,0,0,0,Regular" , 
+		 :parent =  "win"  ,
+		 :text =  "",
+		 :textalign =  1
+		]
+	],
+	[ :name = "reciters_Widget" , :id = 8 , :classname = "formdesigner_qcombobox" , :data = [
+		 :x = 161 , : y = 37  , 
+		 :width =  226 , :height = 34 , 
+		 :textcolor =  "" , 
+		 :backcolor =  "" , 
+		 :font =  "Times New Roman,11,-1,5,50,0,0,0,0,0,Regular" , 
+		 :parent =  "win"  ,
+		 :cItems =  "",
+		 :cCurrentIndex =  "",
+		 :setactivatedEvent =  "",
+		 :setcurrentIndexChangedEvent =  "GetMoshafs",
+		 :seteditTextChangedEvent =  "",
+		 :sethighlightedEvent =  ""
+		]
+	],
+	[ :name = "Label3" , :id = 9 , :classname = "formdesigner_qlabel" , :data = [
+		 :x = 383 , : y = 83  , 
+		 :width =  147 , :height = 56 , 
+		 :textcolor =  "" , 
+		 :backcolor =  "" , 
+		 :font =  "Times New Roman,20,-1,5,50,0,0,0,0,0,Regular" , 
+		 :parent =  "win"  ,
+		 :text =  "اختر مصحفاََ:",
+		 :textalign =  0
+		]
+	],
+	[ :name = "lbl_Reciters_COunt" , :id = 3 , :classname = "formdesigner_qlabel" , :data = [
+		 :x = -119 , : y = 31  , 
+		 :width =  283 , :height = 42 , 
+		 :textcolor =  "" , 
+		 :backcolor =  "" , 
+		 :font =  "Times New Roman,10,-1,5,50,0,0,0,0,0,Regular" , 
+		 :parent =  "win"  ,
+		 :text =  "",
+		 :textalign =  0
+		]
+	],
+	[ :name = "lbl_Moshfs_COunt8" , :id = 4 , :classname = "formdesigner_qlabel" , :data = [
+		 :x = -106 , : y = 80  , 
+		 :width =  283 , :height = 56 , 
+		 :textcolor =  "" , 
+		 :backcolor =  "" , 
+		 :font =  "Times New Roman,10,-1,5,50,0,0,0,0,0,Regular" , 
+		 :parent =  "win"  ,
+		 :text =  "",
+		 :textalign =  0
+		]
+	],
+	[ :name = "Label1" , :id = 2 , :classname = "formdesigner_qlabel" , :data = [
+		 :x = 396 , : y = 26  , 
+		 :width =  116 , :height = 56 , 
+		 :textcolor =  "" , 
+		 :backcolor =  "" , 
+		 :font =  "Times New Roman,20,-1,5,50,0,0,0,0,0,Regular" , 
+		 :parent =  "win"  ,
+		 :text =  "اختر قارئاََ:",
+		 :textalign =  0
+		]
+	],
+	[ :name = "btn_play_sura" , :id = 6 , :classname = "formdesigner_qpushbutton" , :data = [
+		 :x = 211 , : y = 247  , 
+		 :width =  102 , :height = 78 , 
+		 :textcolor =  "" , 
+		 :backcolor =  "" , 
+		 :font =  "Times New Roman,32,-1,5,50,0,0,0,0,0,Regular" , 
+		 :parent =  "win"  ,
+		 :text =  "▶",
+		 :BtnImage =  "",
+		 :setClickEvent =  "play_sura"
+		]
+	]
+]
+# End Form Designer File

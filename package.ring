@@ -45,8 +45,6 @@ aPackageInfo = [
 	:ringfolderfiles = 	[
 	],
 	:windowsfiles = 	[
-		"bin/all_Souars.json",
-		"bin/Quran_ring.exe"
 	],
 	:linuxfiles = 	[
 

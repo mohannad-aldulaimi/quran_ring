@@ -23,3 +23,17 @@
 #### (2) Then Run This Command
 
     ringpm run quran_ring
+
+### Important notes :
+
+#### (1) this application depends on the mp3 quran api:
+
+    https://mp3quran.net/ar/api
+
+#### (2) Any updates of the authors of this api for reciters,moshafs or sowers will updated directly without any update or batch.
+
+#### (3) fell free of using this application,and develop the source code or share it ,but you have to mention that it was made using Ring Programming Language.
+
+### اللهم اجعله عملاََ خالصاََ لوجهك عني وعن والدي وعن كل من نشر او استمع
+
+### Ph. & Dev. Mohannad Alayash (21/12/2023)

@@ -25,7 +25,7 @@ aPackageInfo = [
 			:providerusername = "ringpackages"
 		],
 		[
-			:name = "internetlib",
+			:name = "guilib",
 			:version = "1.0.21",
 			:providerusername = "ringpackages"
 		]

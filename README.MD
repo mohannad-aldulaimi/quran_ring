@@ -19,3 +19,7 @@
 #### (1) Run this Command
 
     ringpm install quran_ring from mohannad-aldulaimi
+
+#### (2) Then Run This Command
+
+    ringpm run quran_ring

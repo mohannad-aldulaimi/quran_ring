@@ -1,15 +1,15 @@
 aPackageInfo = [
 	:name = "The Quran ring Applicaion",
 	:description = "Listen to Quran with Ring programming language",
-	:folder = "Quran_ring",
+	:folder = "quran_ring",
 	:developer = "Mohannad Alayash",
 	:email = "mohannadazazalayash@gmail.com",
 	:license = "MIT License",
-	:version = "0.1.0",
+	:version = "1.0.0",
 	:ringversion = "1.19",
 	:versions = 	[
 		[
-			:version = "0.1.0",
+			:version = "1.0.0",
 			:branch = "main"
 		]
 	],

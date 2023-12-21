@@ -16,4 +16,6 @@
 
 ### How To Run (have Ring Programming Language)
 
-#### (1) Download Using (RingPM - Ring Package Manager)
+#### (1) Run this Command
+
+    ringpm install quran_ring from mohannad-aldulaimi

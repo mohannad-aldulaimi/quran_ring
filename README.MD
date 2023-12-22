@@ -6,6 +6,16 @@
 
 ### < mohannadazazalayash@gmail.com > المؤلف: مهند العياش
 
+### screen shots
+	![Quran_ring screenshot 1](screenshots/1.jpg)
+	![Quran_ring screenshot 2](screenshots/2.jpg)
+	![Quran_ring screenshot 3](screenshots/3.jpg)
+	![Quran_ring screenshot 4](screenshots/4.jpg)
+	![Quran_ring screenshot 5](screenshots/5.jpg)
+	![Quran_ring screenshot 6](screenshots/6.jpg)
+	![Quran_ring screenshot 7](screenshots/7.jpg)
+	![Quran_ring screenshot 8](screenshots/8.jpg)
+
 ### How To Run (don't have Ring Programming Language)
 
 #### (1) Download Ring Programming Language and configure it for your machine

@@ -30,8 +30,12 @@ class Quran_ringController from windowsControllerParent
 		cMoshaf_SERVER = ''
 		cSoura_url = ''
 		cReciter_name=''
-		aAvi_sowers = []
-		
+		aAvi_sowers = []	
+	# center to screan
+		oDesktop = new qdesktopwidget()
+		oView.win{
+			move((oDesktop.width()-width())/2,(oDesktop.height()-height())/2)
+		}
 	# doing styles for minimum width
 		oView.win.setminimumwidth(600)
 		oView.reciters_Widget.setminimumwidth(250)
@@ -161,7 +165,8 @@ class Quran_ringController from windowsControllerParent
 			# setting the media URL to send it to the player
 				media_url = this.cSoura_url 
 			# setting the media name to send it to the player
-				media_name = 'سورة '
+				media_name =  win.windowtitle()+' | '
+				media_name += 'سورة '
 				media_name += this.aAvi_sowers[(self.Sura_Widget.currentindex()-1)][2]
 				media_name += ' - '
 				media_name += this.cReciter_name
@@ -193,6 +198,12 @@ class Quran_ringController from windowsControllerParent
 			this.Sura_player.play()
 		ok*/
 
-			# open the player window after setting the global variables
-				openWindow(:playerController)
+		# open the player window after setting the global variables
+			if lastWindow().ObjectID() > 1
+				lastWindow().mediaPlayer.stop()
+				lastWindow().oView.win.Close()
+				OpenWindow(:playerController)
+			else
+				OpenWindow(:playerController)
+			ok
 		}

@@ -34,6 +34,7 @@ aPackageInfo = [
 		"lib.ring",
 		"main.ring",
 		"all_Souars.json",
+		"Quran_Logo.ico",
 		"player/player.rform",
 		"player/playerController.ring",
 		"player/playerView.ring",

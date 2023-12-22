@@ -6,7 +6,7 @@ media_name = 'سورة طه - محمد صديق المنشاوي'
 
 import System.GUI
 btn_style = '
-GPushButton{text-align:center;font-size:48px;color:blue;border-radius : 50; border:2px solid blue ;}
+GPushButton{text-align:center;font-size:50px;color:blue;border-radius : 50; border:2px solid blue ;}
 GPushButton:hover{color:yellow;border-radius : 50; border:2px solid yellow }
 '
 btn_style = substr(btn_style , nl ,'')
@@ -25,6 +25,12 @@ class playerController from windowsControllerParent
 	
 	oView = new playerView
 
+	if IsMainSourceFile()
+		 setWinIcon(oView.win,"../Quran_Logo.ico")
+	else
+		 setWinIcon(oView.win,"Quran_Logo.ico")
+	ok
+
 	oView.lbl_audioname.setText(media_name)
 	oView.win.setWindowTitle(media_name)
 
@@ -33,7 +39,10 @@ class playerController from windowsControllerParent
 	}
 
 	oView.btn_play.setstylesheet(btn_style)
-	//oView.btn_volume_mute.setstylesheet(btn_style)
+	oView.btn_play.setminimumwidth(50)
+	oView.btn_play.setmaximumwidth(50)
+	oView.btn_play.setmaximumheight(50)
+
 	oView.Player_slider.setPageStep(0)
 
     oView.Player_slider.setTickInterval(0.01)
@@ -149,3 +158,5 @@ func GetTime total_seconds
 
 
 
+func closewindow
+	CloseAction()

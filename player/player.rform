@@ -5,7 +5,7 @@ aObjectsList = [
 		 :width =  400 , :height = 207 , 
 		 :title =  "Player" , 
 		 :backcolor =  "" , 
-		 :windowflags =  "Qt_Tool | Qt_WindowStaysOnTopHint" , 
+		 :windowflags =  "Qt_Window | Qt_WindowTitleHint | Qt_WindowMinimizeButtonHint | Qt_WindowCloseButtonHint | Qt_WindowStaysOnTopHint" , 
 		 :mainlayout =  "Main_layout" ,
 		 :WindowIcon =  "" , 
 		 :Menubar =  ""  ,
@@ -14,7 +14,7 @@ aObjectsList = [
 
 		]
 	],
-	[ :name = "lbl_audioname" , :id = 4 , :classname = "formdesigner_qlabel" , :data = [
+	[ :name = "lbl_audioname" , :id = 2 , :classname = "formdesigner_qlabel" , :data = [
 		 :x = 59 , : y = 15  , 
 		 :width =  309 , :height = 29 , 
 		 :textcolor =  "" , 
@@ -25,7 +25,7 @@ aObjectsList = [
 		 :textalign =  0
 		]
 	],
-	[ :name = "btn_play" , :id = 2 , :classname = "formdesigner_qpushbutton" , :data = [
+	[ :name = "btn_play" , :id = 3 , :classname = "formdesigner_qpushbutton" , :data = [
 		 :x = 4 , : y = 29  , 
 		 :width =  50 , :height = 44 , 
 		 :textcolor =  "" , 
@@ -37,7 +37,7 @@ aObjectsList = [
 		 :setClickEvent =  "btn_play_click"
 		]
 	],
-	[ :name = "player_slider" , :id = 3 , :classname = "formdesigner_qslider" , :data = [
+	[ :name = "player_slider" , :id = 4 , :classname = "formdesigner_qslider" , :data = [
 		 :x = 60 , : y = 42  , 
 		 :width =  315 , :height = 21 , 
 		 :textcolor =  "" , 
@@ -57,7 +57,7 @@ aObjectsList = [
 		 :setvalueChangedEvent =  ""
 		]
 	],
-	[ :name = "player_time_current" , :id = 6 , :classname = "formdesigner_qlabel" , :data = [
+	[ :name = "player_time_current" , :id = 5 , :classname = "formdesigner_qlabel" , :data = [
 		 :x = 65 , : y = 72  , 
 		 :width =  53 , :height = 20 , 
 		 :textcolor =  "" , 
@@ -68,7 +68,7 @@ aObjectsList = [
 		 :textalign =  1
 		]
 	],
-	[ :name = "btn_volume_mute" , :id = 10 , :classname = "formdesigner_qpushbutton" , :data = [
+	[ :name = "btn_volume_mute" , :id = 6 , :classname = "formdesigner_qpushbutton" , :data = [
 		 :x = 120 , : y = 70  , 
 		 :width =  32 , :height = 32 , 
 		 :textcolor =  "" , 
@@ -80,7 +80,7 @@ aObjectsList = [
 		 :setClickEvent =  "MuteaudioToggle"
 		]
 	],
-	[ :name = "player_vol_slider" , :id = 9 , :classname = "formdesigner_qslider" , :data = [
+	[ :name = "player_vol_slider" , :id = 7 , :classname = "formdesigner_qslider" , :data = [
 		 :x = 153 , : y = 69  , 
 		 :width =  79 , :height = 30 , 
 		 :textcolor =  "" , 
@@ -100,7 +100,7 @@ aObjectsList = [
 		 :setvalueChangedEvent =  "updateVolume"
 		]
 	],
-	[ :name = "player_time_end" , :id = 7 , :classname = "formdesigner_qlabel" , :data = [
+	[ :name = "player_time_end" , :id = 8 , :classname = "formdesigner_qlabel" , :data = [
 		 :x = 319 , : y = 72  , 
 		 :width =  63 , :height = 19 , 
 		 :textcolor =  "" , 
@@ -111,7 +111,7 @@ aObjectsList = [
 		 :textalign =  1
 		]
 	],
-	[ :name = "Play_plyerSlider_layout" , :id = 12 , :classname = "formdesigner_qlayout" , :data = [
+	[ :name = "Play_plyerSlider_layout" , :id = 9 , :classname = "formdesigner_qlayout" , :data = [
 		 :x = 23 , : y = 106  , 
 		 :width =  143 , :height = 33 , 
 		 :textcolor =  "" , 
@@ -122,7 +122,7 @@ aObjectsList = [
 		 :LayoutObjects =  "btn_play,player_slider"
 		]
 	],
-	[ :name = "Currenttime_volume_endtime_layout" , :id = 11 , :classname = "formdesigner_qlayout" , :data = [
+	[ :name = "Currenttime_volume_endtime_layout" , :id = 10 , :classname = "formdesigner_qlayout" , :data = [
 		 :x = 121 , : y = 137  , 
 		 :width =  107 , :height = 27 , 
 		 :textcolor =  "" , 
@@ -133,7 +133,7 @@ aObjectsList = [
 		 :LayoutObjects =  "player_time_current,btn_volume_mute,player_vol_slider,player_time_end"
 		]
 	],
-	[ :name = "Main_layout" , :id = 13 , :classname = "formdesigner_qlayout" , :data = [
+	[ :name = "Main_layout" , :id = 11 , :classname = "formdesigner_qlayout" , :data = [
 		 :x = 298 , : y = 108  , 
 		 :width =  96 , :height = 49 , 
 		 :textcolor =  "" , 

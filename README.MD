@@ -7,10 +7,9 @@
 ### < mohannadazazalayash@gmail.com > المؤلف: مهند العياش
 
 ### screen shots
-![Quran_ring screenshot 1](screenshots/1.jpg)
-![Quran_ring screenshot 2](screenshots/2.jpg)
-![Quran_ring screenshot 3](screenshots/3.jpg)
-![Quran_ring screenshot 4](screenshots/4.jpg)
+| Image 1 | Image 2 | Image 3 | Image 4 |
+|---------|---------|---------|---------|
+![Quran_ring screenshot 1](screenshots/1.jpg) | ![Quran_ring screenshot 2](screenshots/2.jpg) | ![Quran_ring screenshot 3](screenshots/3.jpg) | ![Quran_ring screenshot 4](screenshots/4.jpg)
 ![Quran_ring screenshot 5](screenshots/5.jpg)
 ![Quran_ring screenshot 6](screenshots/6.jpg)
 ![Quran_ring screenshot 7](screenshots/7.jpg)

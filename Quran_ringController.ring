@@ -24,6 +24,14 @@
 	}
 
 class Quran_ringController from windowsControllerParent
+? '
+|‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾|
+|           Ring Quran Application         |
+|         Made By : Mohannad Alayash       |
+|  Contact : mohannadazazalayash@gmail.com |
+|             Date : 22/12/2023            |
+|__________________________________________|
+'
 	# class Attributes
 		oView = new Quran_ringView
 		nReciterNumber = 0

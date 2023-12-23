@@ -1,6 +1,7 @@
 # Form/Window Controller - Source Code File
 # https://server10.mp3quran.net/minsh/Almusshaf-Al-Mojawwad/020.mp3
 load "playerView.ring"
+load 'winlib.ring'
 media_url = "https://server10.mp3quran.net/minsh/Almusshaf-Al-Mojawwad/001.mp3"
 media_name = 'سورة طه - محمد صديق المنشاوي'
 
@@ -24,7 +25,11 @@ class playerController from windowsControllerParent
 	display_widget = new qDesktopwidget()
 	
 	oView = new playerView
-
+	if isWindows() and isglobal('oapp')
+			oView.win{
+				righttoleft(winid()) # function comes from 'winlib.ring'
+			}
+	ok
 	if IsMainSourceFile()
 		 setWinIcon(oView.win,"../Quran_Logo.ico")
 	else

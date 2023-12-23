@@ -4,6 +4,7 @@
 	load "Quran_ringView.ring"
 	load 'jsonlib.ring'
 	load 'internetlib.ring'
+	load 'winlib.ring'
 # Loading The Player Controller
 	load 'player/playerController.ring'
 
@@ -18,6 +19,7 @@
 	if IsMainSourceFile() { # This method comes from 'stdlibcore.ring' witch loaded from View file
 		oApp = new App { # start new Qt App
 			StyleFusionBlack() # Apply dark mode colors
+			setLayoutDirection(1) # setting the direction of layout to make the layout right to left. 
 			openWindow(:Quran_ringController) # Opening the window of controller class 
 			exec() # Start the main loop
 		}
@@ -25,7 +27,7 @@
 
 class Quran_ringController from windowsControllerParent
  
-?'|‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾|
+?' __________________________________________
 |           Ring Quran Application         |
 |         Made By : Mohannad Alayash       |
 |  Contact : mohannadazazalayash@gmail.com |
@@ -39,10 +41,15 @@ class Quran_ringController from windowsControllerParent
 		cMoshaf_SERVER = ''
 		cSoura_url = ''
 		cReciter_name=''
-		aAvi_sowers = []	
+		aAvi_sowers = []
 	# apply filter when close the window
 		oView.win.installEventFilter( new QAllEvents(oView.win) { setCloseEvent('oApp.Quit()') } ) 
-
+	# convert the window direction style to (right to left)
+		if isWindows()
+			oView.win{
+				righttoleft(winid()) # function comes from 'winlib.ring'
+			}
+		ok
 	# center to screan
 		oDesktop = new qdesktopwidget()
 		oView.win{
@@ -61,10 +68,20 @@ class Quran_ringController from windowsControllerParent
 	# initialize the built-in player
 		Sura_player = new qMediaplayer()
 		# 'Note :' We do not need it because we are using out side player
+	if ! isandroid()
 	# Starting of getting reciters	
 		cResiters = download('https://mp3quran.net/api/v3/reciters')
+	else
+	# code for mobile application 
+		// Under development
+		new QNetworkAccessManager(oView.win){
+			//? getvalue(new QNetworkRequest( new qurl('https://mp3quran.net/api/v3/reciters'))).readBufferSize()
+		}
+		? '--------------------'
+		cResiters= ''
+	ok
 	# check if there is no internt connection or any problem in api
-		if cResiters != ''                # [firstRow][reciters]
+		if cResiters != ''              # [firstRow][reciters]
 			aResiters = Json2list(cResiters)[1][2]
 		else
 			aResiters = [] # empty list if there was any connection error

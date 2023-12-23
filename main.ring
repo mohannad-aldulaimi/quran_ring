@@ -12,6 +12,7 @@ cStyleSheet_combos = 'text-align:center;'
 if IsMainSourceFile() {
 	oApp = new App {
 		StyleFusionBlack()
+		setLayoutDirection(1)
 		openWindow(:Quran_ringController)
 		exec()
 	}

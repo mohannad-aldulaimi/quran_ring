@@ -1,7 +1,7 @@
 # Start Form Designer File
 aObjectsList = [
 	[ :name = "Window" , :id = 1 , :classname = "formdesigner_qwidget" , :data = [
-		 :x = 223 , : y = 129  , 
+		 :x = 222 , : y = 129  , 
 		 :width =  560 , :height = 400 , 
 		 :title =  "القرآن الكريم" , 
 		 :backcolor =  "" , 
@@ -156,18 +156,18 @@ aObjectsList = [
 		 :font =  "Arial" , 
 		 :parent =  "win"  ,
 		 :LayoutType =  1,
-		 :LayoutObjects =  "lbl_Reciters_COunt,reciters_Widget,Label1"
+		 :LayoutObjects =  "Label1,reciters_Widget,lbl_Reciters_COunt"
 		]
 	],
 	[ :name = "lbl_mohfs_number_layout" , :id = 14 , :classname = "formdesigner_qlayout" , :data = [
-		 :x = 9 , : y = 121  , 
+		 :x = 8 , : y = 121  , 
 		 :width =  99 , :height = 31 , 
 		 :textcolor =  "#dbfffc" , 
 		 :backcolor =  "#633cff" , 
 		 :font =  "Arial" , 
 		 :parent =  "win"  ,
 		 :LayoutType =  1,
-		 :LayoutObjects =  "lbl_Moshfs_COunt8,moshaf_Widget4,Label3"
+		 :LayoutObjects =  "Label3,moshaf_Widget4,lbl_Moshfs_COunt8"
 		]
 	],
 	[ :name = "lbl_sowers_num_layout" , :id = 15 , :classname = "formdesigner_qlayout" , :data = [
@@ -178,7 +178,7 @@ aObjectsList = [
 		 :font =  "Arial" , 
 		 :parent =  "win"  ,
 		 :LayoutType =  1,
-		 :LayoutObjects =  "lbl_Suras_COunt9,Sura_Widget,Label5"
+		 :LayoutObjects =  "Label5,Sura_Widget,lbl_Suras_COunt9,"
 		]
 	],
 	[ :name = "main_layout" , :id = 16 , :classname = "formdesigner_qlayout" , :data = [

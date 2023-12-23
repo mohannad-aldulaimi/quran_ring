@@ -16,7 +16,7 @@
 
 # Checking if this is the main source file 
 	if IsMainSourceFile() { # This method comes from 'stdlibcore.ring' witch loaded from View file
-		qApp = new App { # start new Qt App
+		oApp = new App { # start new Qt App
 			StyleFusionBlack() # Apply dark mode colors
 			openWindow(:Quran_ringController) # Opening the window of controller class 
 			exec() # Start the main loop
@@ -41,7 +41,7 @@ class Quran_ringController from windowsControllerParent
 		cReciter_name=''
 		aAvi_sowers = []	
 	# apply filter when close the window
-		oView.win.installEventFilter( new QAllEvents(oView.win) { setCloseEvent('qApp.quit()') } ) 
+		oView.win.installEventFilter( new QAllEvents(oView.win) { setCloseEvent('oApp.Quit()') } ) 
 
 	# center to screan
 		oDesktop = new qdesktopwidget()

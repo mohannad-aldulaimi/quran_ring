@@ -10,7 +10,7 @@ import System.GUI
 cStyleSheet_combos = 'text-align:center;'
 
 if IsMainSourceFile() {
-	new App {
+	oApp = new App {
 		StyleFusionBlack()
 		openWindow(:Quran_ringController)
 		exec()

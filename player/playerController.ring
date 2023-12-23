@@ -30,6 +30,7 @@ class playerController from windowsControllerParent
 	else
 		 setWinIcon(oView.win,"Quran_Logo.ico")
 	ok
+	oView.win.installEventFilter( new QAllEvents(oView.win) { setCloseEvent(method('pclose_event')) } ) 
 
 	oView.lbl_audioname.setText(media_name)
 	oView.win.setWindowTitle(media_name)
@@ -157,6 +158,5 @@ func GetTime total_seconds
 	return ""+hours+':'+minutes+":"+seconds
 
 
-
-func closewindow
-	CloseAction()
+func pclose_event
+	this.mediaplayer.stop()

@@ -16,7 +16,7 @@
 
 # Checking if this is the main source file 
 	if IsMainSourceFile() { # This method comes from 'stdlibcore.ring' witch loaded from View file
-		new App { # start new Qt App
+		qApp = new App { # start new Qt App
 			StyleFusionBlack() # Apply dark mode colors
 			openWindow(:Quran_ringController) # Opening the window of controller class 
 			exec() # Start the main loop
@@ -24,14 +24,15 @@
 	}
 
 class Quran_ringController from windowsControllerParent
-? '
-|‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾|
+ 
+?'|‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾|
 |           Ring Quran Application         |
 |         Made By : Mohannad Alayash       |
 |  Contact : mohannadazazalayash@gmail.com |
 |             Date : 22/12/2023            |
 |__________________________________________|
 '
+
 	# class Attributes
 		oView = new Quran_ringView
 		nReciterNumber = 0
@@ -39,6 +40,9 @@ class Quran_ringController from windowsControllerParent
 		cSoura_url = ''
 		cReciter_name=''
 		aAvi_sowers = []	
+	# apply filter when close the window
+		oView.win.installEventFilter( new QAllEvents(oView.win) { setCloseEvent(method('pclose_event')) } ) 
+
 	# center to screan
 		oDesktop = new qdesktopwidget()
 		oView.win{
@@ -215,3 +219,5 @@ class Quran_ringController from windowsControllerParent
 				OpenWindow(:playerController)
 			ok
 		}
+	func pclose_event
+		qApp.quit()

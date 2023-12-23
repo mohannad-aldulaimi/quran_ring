@@ -41,7 +41,7 @@ class Quran_ringController from windowsControllerParent
 		cReciter_name=''
 		aAvi_sowers = []	
 	# apply filter when close the window
-		oView.win.installEventFilter( new QAllEvents(oView.win) { setCloseEvent(method('pclose_event')) } ) 
+		oView.win.installEventFilter( new QAllEvents(oView.win) { setCloseEvent('qApp.quit()') } ) 
 
 	# center to screan
 		oDesktop = new qdesktopwidget()
@@ -219,5 +219,3 @@ class Quran_ringController from windowsControllerParent
 				OpenWindow(:playerController)
 			ok
 		}
-	func pclose_event
-		qApp.quit()
